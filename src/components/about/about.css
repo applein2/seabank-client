@@ -1,0 +1,76 @@
+.about {
+  margin-bottom: 80px;
+}
+.about .vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.about img {
+  width: 100%;
+  object-fit: cover;
+}
+.about .mark-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.about .mark-container-col1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.about .mark {
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-bottom: 120px;
+}
+.about .mark-content {
+  display: grid;
+  justify-content: start;
+  align-items: center;
+}
+.about .mark-number {
+  position: absolute;
+  top: 1vw;
+  left: 4vw;
+  color: rgb(199, 199, 240);
+  font-size: 8vw;
+  font-weight: 700;
+}
+.about .history-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+@media screen and (max-width: 480px) {
+  .about .history-container-container {
+    flex-direction: column;
+    display: none;
+  }
+}
+@media screen and (max-width: 780px) {
+  .about .mark-container {
+    grid-template-columns: 1fr;
+  }
+  .about .mark-container-col1 {
+    grid-template-columns: 1fr;
+  }
+  .about .mark {
+    display: none;
+  }
+  .about .mark-title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .about .history-container {
+    grid-template-columns: 1fr;
+  }
+}

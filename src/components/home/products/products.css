@@ -1,0 +1,27 @@
+.product .box {
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+  border-radius: 6px;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+}
+.product img {
+  margin: auto;
+  object-fit: cover;
+}
+
+.box-container {
+  width: 100%;
+  height: 70%;
+}
+
+@media screen and (max-width: 1200px) {
+  .product .content.grid4 {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product .content.grid4 {
+    grid-template-columns: 1fr;
+  }
+}

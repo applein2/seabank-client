@@ -1,0 +1,77 @@
+
+.inquiries .inquiries-container {
+  max-width: 800px;
+  padding: 80px 0;
+}
+
+.inquiries form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.inquiries form .author {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.inquiries input {
+  padding: 15px 30px;
+  background-color: #fdfbfb;
+  border: 1px solid #eceaea;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.inquiries textarea {
+  padding: 15px 30px;
+  background-color: #fdfbfb;
+  border: 1px solid #eceaea;
+  width: 100%;
+  resize: vertical;
+  min-height: 100px;
+  max-height: 200px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.inquiries form {
+  padding: 30px;
+}
+
+.inquiries button {
+  width: 100px;
+}
+
+.inquiries .btn-group {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 780px) {
+  .inquiries .container {
+    width: 90%;
+  }
+
+  .inquiries h4 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .inquiries form div {
+    flex-direction: column;
+  }
+
+  .inquiries input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .inquiries form .author {
+    grid-template-columns: 1fr;
+  }
+}

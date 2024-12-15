@@ -1,0 +1,84 @@
+.board .board-container {
+    max-width: 800px;
+    padding: 80px 0;
+}
+
+.board form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.board form .author {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.board input {
+    padding: 15px 30px;
+    background-color: #fdfbfb;
+    border: 1px solid #eceaea;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.board textarea {
+    padding: 15px 30px;
+    background-color: #fdfbfb;
+    border: 1px solid #eceaea;
+    width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 200px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.board form {
+    padding: 30px;
+}
+
+.board form .dropzone {
+    background-color: #fdfbfb;
+    border: 1px solid #eceaea;
+    margin-bottom: 20px;
+}
+
+.board form .dropzone-container {
+    padding: 30px;
+}
+
+.board form .dropzone-container .dropzone {
+    padding: 40px;
+}
+
+.board button {
+    width: 150px;
+}
+
+.board .btn-group {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 780px) {
+    .board .container {
+        width: 90%;
+    }
+
+    .board h4 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .board form div {
+        flex-direction: column;
+    }
+
+    .board input {
+        width: 100%;
+    }
+}

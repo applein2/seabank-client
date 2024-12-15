@@ -1,0 +1,58 @@
+.register .register-container {
+    max-width: 400px;
+    padding: 80px 0;
+}
+
+.register form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.register form .author {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+.register input {
+    padding: 15px 30px;
+    background-color: #fdfbfb;
+    border: 1px solid #eceaea;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.register form {
+    padding: 30px;
+}
+
+.register button {
+    width: 100px;
+}
+
+.register .btn-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 780px) {
+    .register .container {
+        width: 90%;
+    }
+
+    .register h4 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .register form div {
+        flex-direction: column;
+    }
+
+    .register input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,58 @@
+.login .login-container {
+    max-width: 400px;
+    padding: 80px 0;
+}
+
+.login form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.login form .author {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+.login input {
+    padding: 15px 30px;
+    background-color: #fdfbfb;
+    border: 1px solid #eceaea;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.login form {
+    padding: 30px;
+}
+
+.login button {
+    width: 100px;
+}
+
+.login .btn-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 780px) {
+    .login .container {
+        width: 90%;
+    }
+
+    .login h4 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .login form div {
+        flex-direction: column;
+    }
+
+    .login input {
+        width: 100%;
+    }
+}
